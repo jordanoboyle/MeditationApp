@@ -48,12 +48,12 @@ body {
 }
 
 .gradient-circle {
-  background: conic-gradient(#269d85 0%,
-      #4ca493 40%,
+  background: conic-gradient(#6f0303 0%,
+      #bc5b5b 40%,
       #fff 40%,
       #fff 60%,
-      #336d62 60%,
-      #2a5b52 100%);
+      #e34747 60%,
+      #f99595 100%);
   z-index: -2;
   height: 320px;
   width: 320px;
@@ -61,4 +61,33 @@ body {
   border-radius: 50%;
   top: -10px;
   left: -10px;
+}
+
+.pointer {
+  background-color: white;
+  border-radius: 60%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  /* background: grey; This is a way to see what is going on here */
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
 }
