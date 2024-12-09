@@ -16,7 +16,7 @@ body {
   background: wheat url("https://i0.wp.com/operationrainfall.com/wp-content/uploads/2012/03/xenoblade.jpg?ssl=1") no-repeat center center/cover;
   min-height: 100vh;
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   margin: 0;
